@@ -203,5 +203,16 @@ a.social:hover {
     margin: 40px auto;
   }
 
+  #prelude-image {
+    width: 285px;
+    height: 143px;
+    border-radius: 10px
+  }
+
+  #sunrise-image {
+    width: 378px;
+    height: 284px;
+    border-radius: 10px
+  }
 }
 
