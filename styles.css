@@ -1,13 +1,13 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #222;
   background: #f7f5f0;
 }
@@ -41,23 +41,23 @@ a:hover {
 }
 
 .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
+  display: block;
+  margin-right: auto;
+  color: white;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
   text-align: center;
-  background: url('images/lake_eola_orlando.jpg') no-repeat top center ;
+  background: url("images/lake_eola_orlando.jpg") no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -71,10 +71,13 @@ header .profile-image {
   height: 150px;
   border-radius: 25%;
   border: 3px solid black;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+}
+section img {
+  width: 90%;
 }
 .tag {
   background-color: #efefef;
@@ -83,7 +86,7 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
   color: white;
@@ -96,7 +99,7 @@ header .profile-image:hover {
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .card:hover {
   border-color: #ff99ff;
@@ -128,7 +131,7 @@ footer {
 
 footer .copyright {
   top: -8px;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 footer ul {
@@ -148,8 +151,8 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
+  opacity: 0.4;
+  transition: all 0.5s;
 }
 a.twitter {
   background-image: url(images/twitter.svg);
@@ -169,14 +172,13 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   header {
@@ -187,7 +189,6 @@ a.social:hover {
     max-width: 1200px;
     padding: 0 30px;
   }
-
 
   main {
     padding-top: 20px;
@@ -203,16 +204,8 @@ a.social:hover {
     margin: 40px auto;
   }
 
-  #prelude-image {
-    width: 285px;
-    height: 143px;
-    border-radius: 10px;
-  }
-
-  #sunrise-image {
-    width: 378px;
-    height: 284px;
-    border-radius: 10px;
+  section img {
+    width: 100%;
+    max-width: 400px;
   }
 }
-
